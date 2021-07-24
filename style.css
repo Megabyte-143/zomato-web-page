@@ -5,56 +5,130 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
 }
 
-
-
 .navbar {
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around  ;
+    
+    justify-content: space-between;
     background-color: #fff;
 }
 
 .navbar__brand {
     width: 100px;
+    
 }
 
 .navbar__brand__logo {
     width: 100%;
 }
 
-.nav__item {
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.hero__image__container {
+    width: 100%;
+}
+
+.hero__image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 3px #dd2467;
+}
+
+.hero__text {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 20px 0;
+    margin-bottom:4px ;
+    color: #1d3557;
+}
+
+.button__primary {
     background-image: linear-gradient( to right, #ff512f 0%, #dd2467 51%, #ff512f 100%);
-    padding: 10px;
+    padding: 8px 12px 8px 12px;
     border: none;
-    border-radius: 10px;
-color: #fff;
-
+    border-radius: 5px;
+    color: #fff;
+    /* margin-top: -10px; */
+    margin-left: 10px;
 }
 
-.nav__item:hover {
-    background-position: right  center;
+.button__primary:hover {
+    background-position: right center;
     border: 2px solid palevioletred;
-    
 }
 
+.play__container {
+    margin: 10px;
+
+}
+
+.explore__menu__text {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #1d3557;
+}
+
+.food_card {
+    background-color: #F9F9F9;
+}
+
+.food__card__image__container {
+    max-width: 100px;
+}
+
+.food__image {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.food__card__description {
+    padding: 15px;
+}
 
 @media (min-width: 768px) {
-    .navbar{
+    .navbar {
         justify-content: space-between;
         padding: 10px 30px;
-    }   
+    }
+    .hero__container {
+        align-items: center;
+        flex-direction: row-reverse;
+        display: flex;
+        margin-top: 20px;
+    }
+    .explore__menu__lists {
+        display: flex;
+    }
+    .food__card__image__container {
+        width: 200px;
+        margin: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
-    .navbar__brand{
+    .container {
+        max-width: 70%;
+    }
+    .navbar__brand {
         width: 150px;
     }
-    .nav__item{
+    .button__primary {
         padding: 20px;
         font-size: 24px;
         font-weight: 600;
+    }
+    .hero__description {
+        width: 100%;
+    }
+    .hero__text {
+        font-size: 48px;
     }
 }
