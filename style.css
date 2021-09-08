@@ -266,6 +266,22 @@ body {
   z-index: 6;
 }
 
+.footer__container {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #ca7a97 51%,
+    #ff512f 100%
+  );
+  display: flex;
+}
+
+.footer__logo__container {}
+
+.footer__buttons__container {}
+
+.footer__button {}
+
 @media (min-width: 768px) {
   .navbar {
     justify-content: space-between;
